@@ -2,7 +2,7 @@ class Node {
   constructor(element) {
     this.value = element;
     this.next = undefined;
-  }
+  } 
 }
 
 class Lista {
@@ -30,4 +30,5 @@ class Lista {
 
 const lista = new Lista();
 lista.push(15);
+lista.push(25)
 console.log(lista);

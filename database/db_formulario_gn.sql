@@ -1,0 +1,20 @@
+DROP DATABASE IF EXISTS formulario_gn;
+CREATE DATABASE formulario_gn
+DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+USE formulario_gn;
+
+CREATE TABLE usuarios(
+usuario_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(45) NOT NULL,
+email VARCHAR(110) NOT NULL,
+senha VARCHAR(120) NOT NULL,
+telefone VARCHAR(15) NOT NULL,
+sexo VARCHAR(15) NOT NULL,
+data_nasc DATE NOT NULL,
+cidade VARCHAR(45) NOT NULL,
+estado VARCHAR(45) NOT NULL,
+endereco VARCHAR(45) NOT NULL
+);
+
+SELECT * FROM usuarios;

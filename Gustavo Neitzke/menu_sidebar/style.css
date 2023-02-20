@@ -68,18 +68,9 @@ body {
     background-color: var(--color-dark5);
     width: 35vw;
     padding: 1em;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+    animation-duration: 1s;
     margin-left: -100vw;
     height: 100%;
-  }
-}
-@-webkit-keyframes showSidebar {
-  from {
-    margin-left: -100vw;
-  }
-  to {
-    margin-left: -10vw;
   }
 }
 @keyframes showSidebar {

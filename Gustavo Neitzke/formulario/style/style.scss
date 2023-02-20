@@ -3,7 +3,8 @@ body {
   background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
 }
 
-.form_box {
+.form_box 
+{
   color: white;
   position: absolute;
   top: 50%;
@@ -16,12 +17,14 @@ body {
   min-width: 250px;
 }
 
-fieldset{
+fieldset
+{
   border:  3px solid dodgerblue;
   border-radius: 15px;
 }
 
-legend {
+legend 
+{
   border: 1px solid dodgerblue;
   padding: 10px;
   text-align: center;
@@ -30,11 +33,13 @@ legend {
   color: white;
 }
 
-.form_box_input {
+.form_box_input 
+{
   position: relative;
 }
 
-.form_box_inputUser {
+.form_box_inputUser 
+{
   background: none;
   border: none;
   border-bottom: 1px solid white;
@@ -45,7 +50,8 @@ legend {
   letter-spacing: 2px;
 }
 
-.form_box_label {
+.form_box_label 
+{
   position: absolute;
   top: 0;
   left: 0;
@@ -54,13 +60,15 @@ legend {
 }
 
 .form_box_inputUser:focus ~ .form_box_label,
-.form_box_inputUser:valid ~ .form_box_label {
+.form_box_inputUser:valid ~ .form_box_label 
+{
   top: -20px;
   font-size: 12px;
   color: dodgerblue;
 }
 
-#data_nascimento {
+#data_nascimento 
+{
   border: none;
   padding: 8px;
   border-radius: 10px;
@@ -68,7 +76,8 @@ legend {
   font-size: 15px;
 }
 
-#submit, #update {
+#submit, #update 
+{
   background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
   width: 100%;
   border: none;

@@ -56,48 +56,7 @@ class Postage
     constructor() 
     {
         this.id = 1;
-        this.arrayPostagem = 
-        [/*
-            {
-                urlImg: './imagens/godfrey.png',
-                titulo: 'Godfrey, the first Elden Lord ',
-                descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, eveniet, ipsa soluta debitis sed consectetur temporibus fugit maiores eum labore explicabo voluptates doloremque illo accusantium eius cupiditate aliquid amet facilis!'
-            },
-            
-            {
-                urlImg: './imagens/malenia.png',
-                titulo: 'Malenia Blade of Miquella',
-                descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, eveniet, ipsa soluta debitis sed consectetur temporibus fugit maiores eum labore explicabo voluptates doloremque illo accusantium eius cupiditate aliquid amet facilis!'
-            },
-        
-            {
-                urlImg: './imagens/starscourge.png',
-                titulo: 'Starscourge Radahn',
-                descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, eveniet, ipsa soluta debitis sed consectetur temporibus fugit maiores eum labore explicabo voluptates doloremque illo accusantium eius cupiditate aliquid amet facilis!'    
-            },
-        
-            {
-                urlImg: './imagens/ranni.png',
-                titulo: 'Ranni the Witch',
-                descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, eveniet, ipsa soluta debitis sed consectetur temporibus fugit maiores eum labore explicabo voluptates doloremque illo accusantium eius cupiditate aliquid amet facilis!'
-            },
-        
-            {
-                urlImg: './imagens/ballid.png',
-                titulo: 'Balidd',
-                descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, eveniet, ipsa soluta debitis sed consectetur temporibus fugit maiores eum labore explicabo voluptates doloremque illo accusantium eius cupiditate aliquid amet facilis!'
-            },
-        
-            {
-                urlImg: './imagens/mohg.png',
-                titulo: 'Mohg, Lord of Blood',
-                descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, eveniet, ipsa soluta debitis sed consectetur temporibus fugit maiores eum labore explicabo voluptates doloremque illo accusantium eius cupiditate aliquid amet facilis!'
-            }*/
-    
-        ]
-        //this.titulo = titulo;
-        //this.urlImg = urlImg;
-        //this.descricao = descricao;
+        this.arrayPostagem = [];
 
     }
 
@@ -105,14 +64,14 @@ class Postage
     {
         let novoPost = this.lerDados();
 
-        if(this.validaCampos(novoPost))
-        {
-           this.adicionarPostagem(novoPost)
-        }
+       // if(this.validaCampos(novoPost))
+        //{
+           this.adicionarPostagem(novoPost);
+       // }
 
         this.listaPostagens();
 
-        this.cancelar();
+       // this.cancelar();
       
        // console.log(this.arrayPostagem);
     }
@@ -161,7 +120,7 @@ class Postage
         event.preventDefault();
     }
 
-    validaCampos(novoPost)
+    /*validaCampos(novoPost)
     {
         let msg = '';
 
@@ -187,7 +146,7 @@ class Postage
             return false;
         }
         return true
-    }
+    }*/
 
     cancelar()
     {
@@ -199,7 +158,14 @@ class Postage
 
 let novoPost = new Postage();
 
-document.querySelector('#postar').addEventListener('click', (event => novoPost.login(event)));
+let nomeh2 = document.querySelector(h2);
+
+if(novoPost != '')
+{
+    nomeh2.classlist.toggle("classeComDisplayNone")
+}
+
+document.querySelector('#postar').addEventListener('click', (event) => novoPost.login(event));
 
 document.querySelector('#postar').addEventListener('click', (event) => novoPost.salvarPostagem(event));
 

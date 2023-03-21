@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: hsl(30deg, 38%, 92%);
+  background-color: hsl(30, 38%, 92%);
   width: 100%;
   min-height: 100%;
 }
@@ -16,7 +16,7 @@ body {
 main {
   display: flex;
   justify-content: space-around;
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
   height: 50vh;
   width: 40vw;
   border-radius: 10px;
@@ -56,14 +56,14 @@ main .offer, main h1 {
 main button {
   position: absolute;
   bottom: 3vh;
-  background-color: hsl(158deg, 36%, 37%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
   border-radius: 7px;
   height: 40px;
   width: 17vw;
 }
 main button:hover {
-  background-color: hsl(135deg, 92%, 14%);
+  background-color: hsl(135, 92%, 14%);
   cursor: pointer;
 }
 @media (max-width: 1325px) {
@@ -78,13 +78,13 @@ main button:hover {
   }
 }
 main h1 {
-  color: hsl(212deg, 21%, 14%);
+  color: hsl(212, 21%, 14%);
 }
 main .offer {
-  color: hsl(158deg, 36%, 37%);
+  color: hsl(158, 36%, 37%);
 }
 main h3, main p, main .old_price {
-  color: hsl(228deg, 12%, 48%);
+  color: hsl(228, 12%, 48%);
 }
 main .old_price {
   text-decoration: line-through;
@@ -125,7 +125,7 @@ main .product_description {
   main .product_description {
     z-index: 2;
     gap: 0.5vh;
-    background-color: hsl(0deg, 0%, 100%);
+    background-color: hsl(0, 0%, 100%);
     margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */

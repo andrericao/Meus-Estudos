@@ -26,10 +26,19 @@ public class OperadoresAritmeticos {
 
         System.out.println(terceiroNome);
 
-        // resultado = resultado + 1;
         resultado++; //4
-        System.out.println(resultado);
+        System.out.println(resultado++);
+        // mesma coisa que =>
+        // 1 - System.out.println(resultado);
+        // 2 - resultado = resultado + 1 == resultado += 1
 
+
+        System.out.println(++resultado);
+        // mesma coisa que =>
+        // 1 - resultado = resultado + 1 == resultado += 1
+        // 2 - System.out.println(resultado);
+
+        System.out.println(++resultado);
 
     }
 }
